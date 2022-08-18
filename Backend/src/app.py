@@ -10,13 +10,11 @@ name_reviewer = "Nancy C. Johnson"
 app = Flask(__name__)
 # URI a la BD real con todos los elementos del dataset
 # Nota: Los metodos Create y PUT no funcionan debido a que se excedio el limite de datos permitido, DELETE y GET funcionan correctamente.
-app.config['MONGO_URI'] = 'mongodb+srv://admin1:admin1@cluster0.jt61sio.mongodb.net/electronics?retryWrites=true&w=majority'
-# mongodb+srv://admin1:admin1@cluster0.jt61sio.mongodb.net/?retryWrites=true&w=majority
-# mongodb+srv://admin1:admin1@cluster0.jt61sio.mongodb.net/electronics?retryWrites=true&w=majority
+app.config['MONGO_URI'] = ''
+
 ## app.config['MONGO_URI'] = 'mongodb://localhost/Electronics'
 # URI a la BD de prueba, en esta solo existen 20 elementos del dataset original
 # Nota: Todos los metodos funcionan como deberian
-# app.config['MONGO_URI'] = 'mongodb+srv://admin:admin@cluster0.qzfqq.mongodb.net/Electronics?retryWrites=true&w=majority'
 
 
 app.config['CORS_HEADERS'] = 'Content-Type'
